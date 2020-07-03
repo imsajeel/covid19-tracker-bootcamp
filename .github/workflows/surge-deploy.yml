@@ -33,5 +33,7 @@ jobs:
       run: npm install
     - name: npm Build
       run: npm build
+    - name: ls for build
+      run: ls -a
     - name: Run Surge
       run: surge ./build/ bootcamp-sajeel-covid-tracker.surge.sh --token ${{secrets.SURGE_TOKEN}}
