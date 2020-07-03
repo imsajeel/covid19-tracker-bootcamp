@@ -30,7 +30,9 @@ jobs:
     - name: Install Surge
       run: npm install -g surge
     - name: Install Yarn
-      run: sudo npm install yarn –g
+      run: npm install –g yarn
+    - name: Install node pakages
+      run: npm install
     - name: Yarn Build
       run: yarn build
     - name: Run Surge
