@@ -29,11 +29,9 @@ jobs:
         node-version: 12   
     - name: Install Surge
       run: npm install -g surge
-    - name: Install Yarn
-      run: npm install –g yarn
-    - name: Install node pakages
+    - name: Install Node pakages
       run: npm install
-    - name: Yarn Build
-      run: yarn build
+    - name: npm Build
+      run: npm build
     - name: Run Surge
       run: surge ./build/ bootcamp-sajeel-covid-tracker.surge.sh --token ${{secrets.SURGE_TOKEN}}
