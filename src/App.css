@@ -68,6 +68,12 @@ footer > a {
   font-weight: 600;
 }
 
+.cardDesc {
+  margin: 10px;
+  font-size: 0.8em;
+  font-weight: 100;
+}
+
 .red {
   background: rgb(255, 90, 90);
   background: linear-gradient(
