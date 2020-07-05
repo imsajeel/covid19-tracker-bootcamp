@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import Chart from "./Chart";
 
 export default function Content({ data }) {
   if (!data.TotalConfirmed)
@@ -17,27 +18,30 @@ export default function Content({ data }) {
           <Card
             title="Total Casses"
             value={TotalConfirmed}
-            desc="These are number of total cases"
+            desc="These are numbers of total cases"
             status="blue"
           />
           <Card
             title="Active"
             value={TotalConfirmed - TotalDeaths - TotalRecovered}
-            desc="These are number of total active cases"
+            desc="These are numbers of active cases"
             status="yellow"
           />
           <Card
             title="Deaths"
             value={TotalDeaths}
-            desc="These are number of total deaths"
+            desc="These are numbers of deaths"
             status="red"
           />
           <Card
             title="Recovered"
             value={TotalRecovered}
-            desc="These are number of total recovered cases"
+            desc="These are numbers of recovered cases"
             status="green"
           />
+        </div>
+        <div>
+          <Chart />
         </div>
       </div>
     );
