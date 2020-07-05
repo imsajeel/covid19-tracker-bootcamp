@@ -13,7 +13,7 @@ export default function Content({ data }) {
     const { TotalConfirmed, TotalDeaths, TotalRecovered } = data;
     return (
       <div className="content">
-        <b>Word Wide data of COVID-19</b>
+        <b>&ensp; Word Wide data of COVID-19</b>
         <div className="cards">
           <Card
             title="Total Casses"

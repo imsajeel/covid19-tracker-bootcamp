@@ -40,7 +40,7 @@ export default function Chart() {
     <div>
       <br />
       <br />
-      <b>Chart</b>
+      <b>&ensp; Chart</b>
       <div className="chartBox">{lineChat}</div>
     </div>
   );
