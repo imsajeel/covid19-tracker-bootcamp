@@ -117,3 +117,11 @@ footer > a {
     rgb(0, 119, 255) 100%
   );
 }
+
+.chartBox {
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 35px -14px rgba(0, 0, 0, 0.63);
+  width: 100%;
+}
