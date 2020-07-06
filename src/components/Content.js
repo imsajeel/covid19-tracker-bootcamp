@@ -3,13 +3,7 @@ import Card from "./Card";
 import Chart from "./Chart";
 
 export default function Content({ data }) {
-  if (!data.TotalConfirmed)
-    return (
-      <div className="content">
-        <h1>Loading.....</h1>
-      </div>
-    );
-  else {
+  if (data.TotalConfirmed) {
     const { TotalConfirmed, TotalDeaths, TotalRecovered } = data;
     return (
       <div className="content">
@@ -43,6 +37,12 @@ export default function Content({ data }) {
         <div>
           <Chart />
         </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="content">
+        <h1>Loading.....</h1>
       </div>
     );
   }
