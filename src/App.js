@@ -9,7 +9,7 @@ import { fetchData } from "./api/api";
 
 class App extends Component {
   state = {
-    data: {},
+    data: [],
   };
 
   async componentDidMount() {
