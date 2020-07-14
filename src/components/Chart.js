@@ -11,7 +11,7 @@ export default function Chart() {
     };
 
     fetchAPI();
-  });
+  }, []);
 
   const lineChat = dailyData.length ? (
     <Line
