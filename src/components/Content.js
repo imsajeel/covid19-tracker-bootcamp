@@ -3,33 +3,33 @@ import Card from "./Card";
 import Chart from "./Chart";
 
 export default function Content({ data }) {
-  if (data.TotalConfirmed) {
-    const { TotalConfirmed, TotalDeaths, TotalRecovered } = data;
+  if (data.confirmed) {
+    const { confirmed, deaths, recovered } = data;
     return (
       <div className="content">
         <b>&ensp; Word Wide data of COVID-19</b>
         <div className="cards">
           <Card
             title="Total Casses"
-            value={TotalConfirmed}
+            value={confirmed.value}
             desc="These are numbers of total cases"
             status="blue"
           />
           <Card
             title="Active"
-            value={TotalConfirmed - TotalDeaths - TotalRecovered}
+            value={confirmed.value - deaths.value - recovered.value}
             desc="These are numbers of active cases"
             status="yellow"
           />
           <Card
             title="Deaths"
-            value={TotalDeaths}
+            value={deaths.value}
             desc="These are numbers of deaths"
             status="red"
           />
           <Card
             title="Recovered"
-            value={TotalRecovered}
+            value={recovered.value}
             desc="These are numbers of recovered cases"
             status="green"
           />
